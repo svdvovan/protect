@@ -47,7 +47,10 @@ public class protect {
             Document doc1 = Jsoup.connect(Path2).get();
 
 
-            //      Elements links3 = doc1.getElementsByClass("product-info");
+//            String ID = doc1.getElementsByClass("cart").get().select("input").attr("onclick");
+//            System.out.println(ID);
+
+
             Elements links3 = doc1.getElementsByClass("name");
 
 
@@ -58,6 +61,8 @@ public class protect {
                 System.out.println(addressUrl3);
 
 
+                String ID = doc1.getElementsByClass("cart").get(yyy).select("input").attr("onclick");
+                System.out.println(ID);
 
                 Document doc4 = Jsoup.connect(addressUrl3).get();
 
@@ -79,8 +84,7 @@ public class protect {
                 String SDescr = doc4.getElementsByClass("htabs").next().html();  //всегда ли код первым?
                 System.out.println(SDescr);
 
-//                String Description = doc4.getElementsByClass("tab-content").select("div[tab-description]").html();
-////                System.out.println(Description);
+
 
 
 
@@ -95,8 +99,8 @@ public class protect {
 
 
 
-//                Cell cell227 = row.createCell(0);
-//                cell227.setCellValue(KOD_product1);
+                Cell cell227 = row.createCell(0);
+                cell227.setCellValue(ID);
 
 
                 Cell cell1 = row.createCell(1);
