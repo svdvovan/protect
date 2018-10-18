@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="jsoup">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../jsoup" />
+      <root url="file://$PROJECT_DIR$/../apache-poi-3-17" />
+      <root url="file://$PROJECT_DIR$/../commons-io-2.6" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/../apache-poi-3-17/docs/apidocs" />
+      <root url="file://$PROJECT_DIR$/../commons-io-2.6/docs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../commons-io-2.6" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../apache-poi-3-17" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../commons-io-2.6" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../jsoup" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../commons-io-2.6" recursive="false" type="SOURCES" />
+  </library>
+</component>
